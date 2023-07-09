@@ -20,7 +20,7 @@ export const PaperbackInfo: SourceInfo = {
     author: 'Lemon',
     contentRating: ContentRating.EVERYONE,
     icon: 'icon.png',
-    version: '1.0.3',
+    version: '1.0.4',
     description: 'Komga Tracker',
     authorWebsite: 'https://github.com/FramboisePi',
     websiteBaseURL: 'https://komga.org'
@@ -115,7 +115,7 @@ export class Paperback extends Tracker {
         const komgaAPI = await this.getKomgaAPI()
 
         const request = createRequestObject({
-            url: `${komgaAPI}/series/${mangaId}/`,
+            url: `${komgaAPI}/series/${mangaId}`,
             method: 'GET',
         })
 
